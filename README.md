@@ -249,14 +249,14 @@ Install only the runtime dependencies when you only need to run the training,
 evaluation, export, or inference pipeline:
 
 ```bash
-python -m pip install .
+python -m pip install --constraint requirements.lock .
 ```
 
 Install the development extras when you also need tests, linting, coverage,
 type checking, and pre-commit tooling:
 
 ```bash
-python -m pip install ".[dev]"
+python -m pip install --constraint requirements.lock ".[dev]"
 ```
 
 *Runtime dependencies: `tensorflow`, `keras`, `opencv-python-headless`, `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`, `PyYAML`, `tqdm`, `Pillow`, `kagglehub`.*
