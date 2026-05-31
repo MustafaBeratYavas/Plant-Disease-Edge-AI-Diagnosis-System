@@ -7,13 +7,25 @@
 
   <p>
     <a href="https://www.python.org/">
-      <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python">
+      <img src="https://img.shields.io/badge/Python-3.11--3.13-3776AB?logo=python&logoColor=white" alt="Python 3.11-3.13">
     </a>
     <a href="https://www.tensorflow.org/">
       <img src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white" alt="TensorFlow">
     </a>
     <a href="https://flutter.dev/">
-      <img src="https://img.shields.io/badge/Flutter-Integration-02569B?logo=flutter&logoColor=white" alt="Flutter">
+      <img src="https://img.shields.io/badge/Flutter-Mobile%20App-02569B?logo=flutter&logoColor=white" alt="Flutter mobile app">
+    </a>
+    <a href="https://github.com/MustafaBeratYavas/plant-disease-edge-ai-diagnosis-system/actions/workflows/ci.yml">
+      <img src="https://github.com/MustafaBeratYavas/plant-disease-edge-ai-diagnosis-system/actions/workflows/ci.yml/badge.svg" alt="CI">
+    </a>
+    <a href="./Dockerfile">
+      <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" alt="Docker ready">
+    </a>
+    <a href="https://docs.astral.sh/ruff/">
+      <img src="https://img.shields.io/badge/Ruff-Lint%20%26%20Format-D7FF64?logo=ruff&logoColor=black" alt="Ruff lint and format">
+    </a>
+    <a href="https://mypy-lang.org/">
+      <img src="https://img.shields.io/badge/mypy-Type%20Checked-2A6DB2" alt="mypy type checked">
     </a>
     <a href="./LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
@@ -245,15 +257,13 @@ python -m pip install --upgrade pip
 
 ### Step 4 - Install Project Dependencies:
 
-Install only the runtime dependencies when you only need to run the training,
-evaluation, export, or inference pipeline:
+Install only the runtime dependencies using the locked dependency constraints:
 
 ```bash
 python -m pip install --constraint requirements.lock .
 ```
 
-Install the development extras when you also need tests, linting, coverage,
-type checking, and pre-commit tooling:
+Install the development extras using the same locked dependency constraints:
 
 ```bash
 python -m pip install --constraint requirements.lock ".[dev]"
